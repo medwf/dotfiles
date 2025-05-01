@@ -1,0 +1,105 @@
+{
+  /* ---------------------- wokbench --------------------------*/
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Dobri Next -A02- Bunker",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "welcomePage",
+  "workbench.tips.enabled": false,
+  "workbench.editor.showTabs": "single",
+  "workbench.iconTheme": "material-icon-theme",
+
+  /* ---------------------- material icon --------------------------*/
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 16,
+  
+  /* ---------------------- editor --------------------------*/
+  "breadcrumbs.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 15,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabSize": 2,
+  // "editor.minimap.enabled": false,
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  // "editor.accessibilitySupport": "off",
+  "editor.lineNumbers": "on",
+  "files.insertFinalNewline": true,
+  
+  /* ---------------------- explorer --------------------------*/
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  // other
+  "window.newWindowProfile": "Default",
+  "database-client.autoSync": true,
+  "terminal.explorerKind": "both",
+  "redhat.telemetry.enabled": true,
+
+  /* ---------------------- Enable, Disable --------------------------*/
+  "window.commandCenter": false,
+  "workbench.statusBar.visible": false,
+  
+  /* ---------------------- Custom css, js --------------------------*/
+  "vscode_custom_css.imports": [
+    "file:///home/medwf/.config/Code/User/custom-vscode.css",
+    "file:///home/medwf/.config/Code/User/custom-script.js",
+    "file:///home/medwf/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+
+  /* ---------------------- Animations --------------------------*/
+  "animations.Enabled": true,
+
+  /* ---------------------- Config formatter --------------------------*/
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "prettier.singleQuote": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "emmet.includeLanguages": {
+    "jsp": "html"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "liveServer.settings.donotShowInfoMsg": true
+}
