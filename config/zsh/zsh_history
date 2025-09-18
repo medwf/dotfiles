@@ -1,7 +1,0 @@
-: 1756997009:0;git add . 
-: 1756997015:0;git commit -m "get config, and make tools"
-: 1756997026:0;git push 
-: 1756997048:0;git log --oneline 
-: 1756997073:0;git rest --soft a22eb56
-: 1756997081:0;git reset --soft a22eb56
-: 1756997095:0;git add . && git commit -m "get config, and make tools"
