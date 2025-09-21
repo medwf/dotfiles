@@ -48,7 +48,7 @@ source $ZSH/oh-my-zsh.sh
 
 # My alias 
 
-alias cty='tty-clock -S -c -C 6 -t -n -D'
+# alias cty='tty-clock -S -c -C 6 -t -n -D'
 alias n='nvim'
 alias t='tmux'
 alias ta='tmux attach'
@@ -61,31 +61,54 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
+# git aliases
 alias gc='git clone '
-alias ga='git add .'
+alias ga='git add . '
 alias gcm='git commit -m '
-alias gp='git push -u orign main'
-alias gs='git status'
+alias gp='git push -u origin '
+alias gs='git status '
+alias gl='git log --oneline --graph --decorate --all '
+alias gd='git diff'
+alias gco='git checkout '
+alias gb='git branch '
+alias gpl='git pull '
+
+# pacman aliases
+alias p='sudo pacman -S '
+alias pu='sudo pacman -Syu '
+alias ps='sudo pacman -Ss '
+alias pr='sudo pacman -Rns '
+alias pi='p --noconfirm '
+alias pl='sudo pacman -Q '
+alias pcc='sudo pacman -Scc'
+
+# yay aliases
+alias y='yay -S '
+alias yu='yay -Syu '
+alias ys='yay -Ss '
+alias yc='yay -Rns '
+alias yi='yay -S --noconfirm '
+alias ycc='yay -Scc'
+alias yua='yay -Sua '
+alias yq='yay -Qu '
+
+
+# other aliases
 alias ll='ls -Alh'
 alias ls='lsd --group-dirs first'
 alias cat='bat'
-alias gc='g++ -o o'
+
 alias py='python3'
-alias py='python3'
+
 alias c='sudo rsync -avhW --no-compress --progress '
-alias code='code --ozone-platform=x11'
-alias kiro='kiro --ozone-platform=x11'
-alias y='yazi'
+
 alias md1='sudo mount /dev/sda5 /mnt/vmachines'
 alias md2='sudo mount /dev/sda4 /mnt/windows-drive'
 alias web='tmuxifier load-session web-dev'
-alias lg='lazygit'
+
 alias nivm='nvim'
-alias pdf='firefox'
 alias cd='z'
-alias s='sudo pacman -Ss '
-alias i='sudo pacman -S '
-alias u='sudo pacman -Syu '
+
 alias tk='tmux kill-server'
 
 
@@ -99,7 +122,10 @@ setopt appendhistory
 
 
 # exports
-export LC_TIME=ur_PK.UTF-8
+# export LC_TIME=ur_PK.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 eval "$(zoxide init zsh)"
@@ -110,7 +136,7 @@ export PATH=$PATH:/home/ahmad/.spicetify
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# . "$HOME/.local/bin/env"
+ . "$HOME/.local/bin/env"
 
 # pnpm
 #export PNPM_HOME="/home/medwf/.local/share/pnpm"

@@ -5,6 +5,5 @@
 /* this file along with the unique configs and styles. */
 /* IMPORTANT, be mindful with , or ". else waybar will not start */
 
-{
-
+ {
 }

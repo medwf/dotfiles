@@ -5,7 +5,8 @@
       "$HOME/.config/waybar/ModulesWorkspaces",
       "$HOME/.config/waybar/ModulesCustom",
       "$HOME/.config/waybar/ModulesGroups",
-      "$HOME/.config/waybar/UserModules"
+      "$HOME/.config/waybar/UserModules",
+      "$HOME/.config/waybar/ModuleGroups/medwf.jsonc"
     ],
     "layer": "top",
     "exclusive": true,
@@ -18,7 +19,7 @@
     "margin-left": 8,
     "margin-right": 8,
     "modules-left": [
-      "custom/menu",
+      "group/menu",
       "custom/separator#dot-line",
       "group/mobo_drawer",
       "custom/separator#dot-line",
@@ -31,24 +32,16 @@
       "custom/separator#dot-line",
       "clock",
       "custom/separator#dot-line",
-      "group/notify"
+      "battery"
     ],
     "modules-right": [
-      "tray",
-      "custom/weather",
-      "network",
-      "custom/separator#dot-line",
-      "bluetooth",
-      "custom/separator#dot-line",
-      "backlight",
-      "custom/separator#dot-line",
-      "battery",
+      "group/connections",
       "custom/separator#dot-line",
       "group/audio",
       "custom/separator#dot-line",
-      "custom/updater",
+      "backlight",
       "custom/separator#dot-line",
-      "group/status"
+      "custom/updater"
     ]
   }
 ]

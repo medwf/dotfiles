@@ -98,7 +98,7 @@
 "clock": {
 	"interval": 1,
     // "format": " {:%I:%M %p}", // AM PM format
-    "format": "{:%H:%M:%S}", // 24H
+    "format": "{:%H:%M}", // 24H
 	"format-alt": " {:%H:%M   %Y, %d %B, %A}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
@@ -269,7 +269,7 @@
 
 "network": {
 	"format": "{ifname}",
-	"format-wifi": "{essid} {signalStrength}%",
+	"format-wifi": "󰤨  {signalStrength}%",
 	"format-ethernet": "󰌘",
 	"format-disconnected": "󰌙",
 	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
@@ -281,7 +281,7 @@
 	"format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
-	"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nmtui"
+	"on-click": "nm-connection-editor"
 },
 
 "network#speed": {
@@ -374,8 +374,8 @@
 },
 
 "tray": {
-	"icon-size": 20,
-	"spacing": 4,
+	"icon-size": 24,
+	"spacing": 6
 },
 
 "wireplumber": {
@@ -387,12 +387,12 @@
 	"on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
 	"format-icons": [
 		"", " ", "󰕾 ", ""
-	],
+	]
 },
 
 "wlr/taskbar": {
 	"format": "{icon}",
-	"icon-size": 18,
+	"icon-size": 20,
 	"all-outputs": false,
 	"tooltip-format": "{title}",
 	"on-click": "activate",
@@ -401,7 +401,7 @@
 		"wofi",
 		"rofi",
 		"kitty",
-    	"kitty-dropterm"
-		],
-},
+		"kitty-dropterm"
+	]
+}
 }
