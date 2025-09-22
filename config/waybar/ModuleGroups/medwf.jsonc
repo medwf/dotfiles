@@ -8,7 +8,8 @@
         },
         "modules": [
             "custom/menu",
-            "custom/power"
+            "custom/power",
+            "idle_inhibitor"
         ]
     },
     "group/cpu":{},

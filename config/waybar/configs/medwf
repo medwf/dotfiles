@@ -23,12 +23,12 @@
       "custom/separator#dot-line",
       "group/mobo_drawer",
       "custom/separator#dot-line",
+      "hyprland/workspaces#numbers",
+      "custom/separator#dot-line",
       "wlr/taskbar"
     ],
     "modules-center": [
-      "idle_inhibitor",
-      "custom/separator#dot-line",
-      "hyprland/workspaces#numbers",
+      "backlight",
       "custom/separator#dot-line",
       "clock",
       "custom/separator#dot-line",
@@ -38,8 +38,6 @@
       "group/connections",
       "custom/separator#dot-line",
       "group/audio",
-      "custom/separator#dot-line",
-      "backlight",
       "custom/separator#dot-line",
       "custom/updater"
     ]

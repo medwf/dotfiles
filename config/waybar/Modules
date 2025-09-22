@@ -269,7 +269,7 @@
 
 "network": {
 	"format": "{ifname}",
-	"format-wifi": "󰤨  {signalStrength}%",
+	"format-wifi": " {essid} | 󰤨 {signalStrength}%",
 	"format-ethernet": "󰌘",
 	"format-disconnected": "󰌙",
 	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
