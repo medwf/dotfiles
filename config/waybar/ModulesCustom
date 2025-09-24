@@ -185,7 +185,7 @@
 // NOTE:! This is mainly for Arch and Arch Based Distros  depend: pacman-contrib
 // Other Distro dont have notifications but can use to check for update for any other distro
 "custom/updater": {
-	"format": " {}",
+	"format": " {} ",
 	"exec": "checkupdates | wc -l",
 	"exec-if": "[[ $(checkupdates | wc -l) ]]",
 	"interval": 43200, // (Arch Linux will try to check 12 hrs interval only

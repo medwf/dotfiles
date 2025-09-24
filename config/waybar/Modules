@@ -26,7 +26,7 @@
 	"interval": 2,
 	"align": 0,
 	"rotate": 0,
-	"format": "{icon}{percent}%",
+	"format": " {icon}{percent}%",
 	"format-icons": [
 		" ",
 		" ",
@@ -68,7 +68,7 @@
 		"warning": 30,
 		"critical": 15
 	},
-	"format": "{icon} {capacity}%",
+	"format": "{icon} {capacity}% ",
 	"format-charging": " {capacity}%",
 	"format-plugged": "󱘖 {capacity}%",
 	"format-alt-click": "click",
@@ -269,7 +269,7 @@
 
 "network": {
 	"format": "{ifname}",
-	"format-wifi": " {essid} | 󰤨 {signalStrength}%",
+	"format-wifi": "{essid} {signalStrength}%",
 	"format-ethernet": "󰌘",
 	"format-disconnected": "󰌙",
 	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",

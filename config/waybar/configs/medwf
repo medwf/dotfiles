@@ -23,9 +23,7 @@
       "custom/separator#dot-line",
       "group/mobo_drawer",
       "custom/separator#dot-line",
-      "hyprland/workspaces#numbers",
-      "custom/separator#dot-line",
-      "wlr/taskbar"
+      "hyprland/workspaces#numbers"
     ],
     "modules-center": [
       "backlight",
@@ -35,6 +33,7 @@
       "battery"
     ],
     "modules-right": [
+      "tray",
       "group/connections",
       "custom/separator#dot-line",
       "group/audio",
