@@ -130,8 +130,8 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 eval "$(zoxide init zsh)"
 eval "$(tmuxifier init -)"
-export PATH=$PATH:/home/ahmad/.spicetify
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+# export PATH=$PATH:/home/ahmad/.spicetify
+# [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -139,9 +139,9 @@ export PATH=$PATH:/home/ahmad/.spicetify
  . "$HOME/.local/bin/env"
 
 # pnpm
-#export PNPM_HOME="/home/medwf/.local/share/pnpm"
-#case ":$PATH:" in
-#  *":$PNPM_HOME:"*) ;;
-#  *) export PATH="$PNPM_HOME:$PATH" ;;
-#esac
+export PNPM_HOME="/home/medwf/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
