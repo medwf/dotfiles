@@ -74,13 +74,11 @@ alias gb='git branch '
 alias gpl='git pull '
 
 # pacman aliases
-alias p='sudo pacman -S '
-alias pu='sudo pacman -Syu '
-alias ps='sudo pacman -Ss '
-alias pr='sudo pacman -Rns '
-alias pi='p --noconfirm '
-alias pl='sudo pacman -Q '
-alias pcc='sudo pacman -Scc'
+alias i='sudo pacman -S '
+alias u='sudo pacman -Syu '
+alias s='sudo pacman -Ss '
+alias r='sudo pacman -Rns '
+alias l='sudo pacman -Q '
 
 # yay aliases
 alias y='yay -S '
@@ -110,6 +108,13 @@ alias nivm='nvim'
 alias cd='z'
 
 alias tk='tmux kill-server'
+
+# pnpm alias
+alias pi='pnpm install'
+alias pr='pnpm run '
+alias pu='pnpm update'
+alias pre='pnpm remove'
+alias pl='pnpm list'
 
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
