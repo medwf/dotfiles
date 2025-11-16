@@ -1,0 +1,50 @@
+[
+  {
+    "include": [
+      "$HOME/.config/waybar/Modules",
+      "$HOME/.config/waybar/ModulesWorkspaces",
+      "$HOME/.config/waybar/ModulesCustom",
+      "$HOME/.config/waybar/ModulesGroups",
+      "$HOME/.config/waybar/UserModules",
+      "$HOME/.config/waybar/ModuleGroups/medwf.jsonc"
+    ],
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "spacing": 3,
+    "fixed-center": true,
+    "ipc": true,
+    "margin-top": 1,
+    "margin-left": 8,
+    "margin-right": 8,
+    "modules-left": [
+      "group/menu",
+      "custom/separator#dot-line",
+      "temperature",
+      "custom/separator#dot-line",
+      "cpu",
+      "power-profiles-daemon",	
+      "memory",
+      "disk",
+      "custom/separator#dot-line",
+      "hyprland/workspaces#numbers"
+    ],
+    "modules-center": [
+      "backlight",
+      "custom/separator#dot-line",
+      "clock",
+      "custom/separator#dot-line",
+      "battery"
+    ],
+    "modules-right": [
+      "tray",
+      "network",
+      "bluetooth",
+      "custom/separator#dot-line",
+      "group/audio",
+      "custom/separator#dot-line",
+      "custom/updater"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+    "group/menu": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "custom/menu",
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "custom/menu",
+            "custom/power",
+            "idle_inhibitor"
+        ]
+    }
+    // "group/cpu":{},
+    // "group/connections":{
+    //     "orientation": "inherit",
+    //     "drawer": {
+    //         "transition-duration": 500,
+    //         "children-class": "network",
+    //         "transition-left-to-right": true
+    //     },
+    //     "modules": [
+    //         // "network",
+    //         // "network#speed",
+    //         // "custom/separator#dot-line",
+    //         // "bluetooth"
+    //     ]
+    // },
+    // "group/clock":{}
+}
