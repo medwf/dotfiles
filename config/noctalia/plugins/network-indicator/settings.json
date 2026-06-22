@@ -1,0 +1,22 @@
+{
+  "iconType": "chevron",
+  "byteThresholdActive": 5000,
+  "fontSizeModifier": 1.1,
+  "iconSizeModifier": 1,
+  "useCustomColors": false,
+  "useCustomFont": true,
+  "customFontBold": true,
+  "customFontItalic": false,
+  "columnSpacing": 0,
+  "rowSpacing": -8,
+  "paddingLeft": 5,
+  "paddingRight": 0,
+  "layout": "horizontal",
+  "slots": [
+    "none",
+    "none",
+    "none",
+    "rxSpeed"
+  ],
+  "customFontFamily": "JetBrains Mono ExtraBold"
+}

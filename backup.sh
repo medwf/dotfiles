@@ -1,12 +1,9 @@
 #/bin/bash
-cp -r ~/.config/hypr .
-cp -r ~/.config/kitty .
-cp -r ~/.config/noctalia .
-cp -r ~/.config/btop .
-cp -r ~/.config/nvim .
-cp -r ~/.config/Thunar .
-cp -r ~/.config/yazi .
-
-# Vs code
-cp ~/.config/Code/User/settings.json Code/User/settings.json
+cp -rf ~/.config/hypr config/
+cp -rf ~/.config/kitty config/
+cp -rf ~/.config/noctalia config/
+cp -rf ~/.config/btop config/
+cp -rf ~/.config/nvim config/
+cp -rf ~/.config/Thunar config/
+cp -rf ~/.config/yazi config/
 
