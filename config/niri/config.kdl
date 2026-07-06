@@ -1,0 +1,45 @@
+// This config is in the KDL format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://niri-wm.github.io/niri/Configuration:-Introduction
+
+// =========================
+// Appearance
+// =========================
+include "appearance/animations.kdl"
+include "appearance/layout.kdl"
+include "appearance/overview.kdl"
+include "appearance/noctalia.kdl"
+
+// =========================
+// Hardware
+// =========================
+include "hardware/input.kdl"
+include "hardware/outputs.kdl"
+
+// =========================
+// Window Rules
+// =========================
+include "rules/full.kdl"
+include "rules/floating.kdl"
+include "rules/opacity.kdl"
+include "rules/layer.kdl"
+include "rules/workspace.kdl"
+
+// =========================
+// Startup
+// =========================
+include "startup.kdl"
+
+// =========================
+// Keybindings
+// =========================
+include "binds.kdl"
+
+// =========================
+// System
+// =========================
+include "system.kdl"
+
+include "./noctalia.kdl"
+

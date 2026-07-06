@@ -1,0 +1,15 @@
+// Full window diplay app
+window-rule {
+    match title="Visual Studio Code"
+    open-maximized true
+}
+
+window-rule {
+    match title="Brave"
+    open-maximized true
+}
+
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}

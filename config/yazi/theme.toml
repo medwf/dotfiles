@@ -1,8 +1,5 @@
 [flavor]
 light = "noctalia"
 use = "tokyo-night"
-light = "noctalia"
 # For Yazi 0.4 and above
-light = "noctalia"
 dark  = "noctalia"
-light = "noctalia"

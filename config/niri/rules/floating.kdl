@@ -1,0 +1,4 @@
+window-rule {
+    match app-id=r#"thunar"# title=r#"^Rename.*"#
+    open-floating true
+}

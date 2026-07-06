@@ -1,0 +1,2 @@
+spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "polkit-gnome-authentication-agent-1"

@@ -1,0 +1,13 @@
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+switch-events {
+    lid-close {
+        // Triggers instantly
+        spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"
+    }
+}
