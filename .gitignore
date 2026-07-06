@@ -1,2 +1,2 @@
-config/zsh/plugins/*
-config/zsh/powerlevel10k/*
+config/zsh/plugins
+config/zsh/powerlevel10k
