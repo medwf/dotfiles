@@ -202,4 +202,5 @@
     "sound": "off",
     "announcement": "off"
   },
+  "js/ts.experimental.useTsgo": true,
 }
