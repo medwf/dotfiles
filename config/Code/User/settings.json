@@ -203,4 +203,5 @@
     "announcement": "off"
   },
   "js/ts.experimental.useTsgo": true,
+  "git.confirmSync": false,
 }

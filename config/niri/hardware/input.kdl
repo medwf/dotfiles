@@ -1,6 +1,8 @@
 input {
     keyboard {
         xkb {
+            layout "us,ar"
+            options "grp:alt_shift_toggle"
             // You can set rules, model, layout, variant and options.
             // For more information, see xkeyboard-config(7).
 
