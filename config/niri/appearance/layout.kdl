@@ -1,7 +1,7 @@
 
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 2
+    gaps 4
     background-color "transparent"
 
     // When to center a column when changing focus, options are:

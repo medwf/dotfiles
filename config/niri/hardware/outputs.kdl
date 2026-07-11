@@ -28,3 +28,8 @@
     // automatically.
     position x=1280 y=0
 }
+output "eDP-1" {
+    hot-corners {
+        off
+    }
+}
