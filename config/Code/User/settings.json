@@ -8,7 +8,7 @@
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "workbench.editor.showTabs": "single",
-  "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.indent": 20,
   /* ---------------------- material icon --------------------------*/
