@@ -15,8 +15,3 @@ window-rule {
     match title="Google Chrome"
     open-maximized true
 }
-
-window-rule {
-    geometry-corner-radius 8
-    clip-to-geometry true
-}

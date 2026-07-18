@@ -6,40 +6,41 @@
 // =========================
 // Appearance
 // =========================
-include "appearance/animations.kdl"
-include "appearance/layout.kdl"
-include "appearance/overview.kdl"
-include "appearance/noctalia.kdl"
+include "cfg/animations.kdl"
+include "cfg/layout.kdl"
+include "cfg/overview.kdl"
 
 // =========================
 // Hardware
 // =========================
-include "hardware/input.kdl"
-include "hardware/outputs.kdl"
+include "cfg/input.kdl"
+include "cfg/display.kdl"
 
 // =========================
 // Window Rules
 // =========================
-include "rules/full.kdl"
-include "rules/floating.kdl"
-include "rules/opacity.kdl"
-include "rules/layer.kdl"
-include "rules/workspace.kdl"
+include "cfg/rules/rules.kdl"
+include "cfg/rules/full.kdl"
+include "cfg/rules/floating.kdl"
+include "cfg/rules/opacity.kdl"
+include "cfg/rules/layer.kdl"
+include "cfg/rules/workspace.kdl"
 
 // =========================
 // Startup
 // =========================
-include "startup.kdl"
+include "cfg/startup.kdl"
 
 // =========================
 // Keybindings
 // =========================
-include "binds.kdl"
+include "cfg/binds.kdl"
 
 // =========================
 // System
 // =========================
-include "system.kdl"
+include "cfg/system.kdl"
 
-include "./noctalia.kdl"
+// theme noctalia shell
+include "noctalia.kdl"
 
