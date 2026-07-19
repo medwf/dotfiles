@@ -9,7 +9,7 @@ alias y='yazi'
 # Navigation
 # =========================================================
 alias cd='z'
-alias -- -='cd -'  # -- prevents - being parsed as a flag; cd - jumps to previous directory
+alias - -='cd -'  # -- prevents - being parsed as a flag; cd - jumps to previous directory
 alias .1='cd ..'
 alias .2='cd ../..'
 alias .3='cd ../../..'
@@ -29,12 +29,23 @@ lf() {
 
 
 # =========================================================
+# package manager `pacman`
+# =========================================================
+alias pi='sudo pacman -S '
+alias pu='sudo pacman -Syu '
+alias ps='sudo pacman -Ss '
+alias pr='sudo pacman -R '
+alias pra='sudo pacman -Rns '
+alias pl='sudo pacman -Q '
+
+# =========================================================
 # package manager `paru`
 # =========================================================
 alias i='paru -S '
 alias u='paru -Syu '
 alias s='paru -Ss '
-alias r='paru -Rns '
+alias r='paru -R '
+alias ra='paru -Rns '
 alias l='paru -Q '
 
 
@@ -43,10 +54,10 @@ alias l='paru -Q '
 # =========================================================
 # Reuse ls completions for eza (avoids defining a separate completion function)
 compdef eza=ls
-alias ls='eza --icons'
-alias ll='eza -lh --icons --git'
-alias la='eza -lah --icons --git'
-alias tree='eza --tree --icons'
+alias ls='eza --icons="always" '
+alias ll='eza -lh --icons="always"  --git'
+alias la='eza -lah --icons="always"  --git'
+alias tree='eza --tree --icons="always" '
 
 
 # =========================================================

@@ -13,9 +13,9 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
     Mod+C hotkey-overlay-title="Open a editor: vs code" { spawn "code"; }
     Mod+B hotkey-overlay-title="Open a Browser: brave" { spawn "brave"; }
-    Mod+T hotkey-overlay-title="Open a files manager: thunar" { spawn "thunar"; }
+    Mod+T hotkey-overlay-title="Open a files manager: nautilus" { spawn "nautilus"; }
 
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
