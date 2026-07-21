@@ -45,7 +45,7 @@
         "backgroundOpacity": 0.93,
         "barType": "floating",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 0.24,
+        "capsuleOpacity": 0,
         "contentPadding": 8,
         "density": "default",
         "displayMode": "always_visible",
@@ -54,7 +54,7 @@
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
-        "marginHorizontal": 4,
+        "marginHorizontal": 10,
         "marginVertical": 4,
         "middleClickAction": "none",
         "middleClickCommand": "",
@@ -71,7 +71,7 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
@@ -138,6 +138,13 @@
                     "id": "plugin:privacy-indicator"
                 },
                 {
+                    "defaultSettings": {
+                        "activeColor": "success",
+                        "iconColor": "none",
+                        "inactiveColor": "error",
+                        "refreshInterval": 5000,
+                        "statusState": "all"
+                    },
                     "id": "plugin:mini-docker"
                 },
                 {
@@ -208,6 +215,10 @@
                     ]
                 },
                 {
+                    "id": "Spacer",
+                    "width": 10
+                },
+                {
                     "displayMode": "onhover",
                     "iconColor": "tertiary",
                     "id": "Bluetooth",
@@ -220,11 +231,28 @@
                     "textColor": "none"
                 },
                 {
+                    "defaultSettings": {
+                        "byteThresholdActive": 5000,
+                        "columnSpacing": 0,
+                        "customFontBold": false,
+                        "customFontItalic": false,
+                        "fontSizeModifier": 0.75,
+                        "iconSizeModifier": 1,
+                        "iconType": "caret",
+                        "layout": "vertical",
+                        "paddingLeft": 5,
+                        "paddingRight": 0,
+                        "rowSpacing": -8,
+                        "slots": [
+                            "txSpeed",
+                            "txIcon",
+                            "rxSpeed",
+                            "rxIcon"
+                        ],
+                        "useCustomColors": false,
+                        "useCustomFont": false
+                    },
                     "id": "plugin:network-indicator"
-                },
-                {
-                    "id": "Spacer",
-                    "width": 20
                 },
                 {
                     "clockColor": "none",
@@ -465,13 +493,13 @@
         "language": "",
         "lockOnSuspend": true,
         "lockScreenAnimations": true,
-        "lockScreenBlur": 0.4,
+        "lockScreenBlur": 0.3,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
         ],
         "lockScreenTint": 0.2,
         "passwordChars": false,
-        "radiusRatio": 1,
+        "radiusRatio": 0.3,
         "reverseScroll": false,
         "scaleRatio": 1,
         "screenRadiusRatio": 0.62,
@@ -539,12 +567,12 @@
     },
     "nightLight": {
         "autoSchedule": true,
-        "dayTemp": "6500",
+        "dayTemp": "2888",
         "enabled": false,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "2388"
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
@@ -713,6 +741,10 @@
             {
                 "enabled": true,
                 "id": "telegram"
+            },
+            {
+                "enabled": true,
+                "id": "qt"
             }
         ],
         "enableUserTheming": false
