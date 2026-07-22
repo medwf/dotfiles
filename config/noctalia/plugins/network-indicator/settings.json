@@ -19,8 +19,8 @@
     "rxSpeed"
   ],
   "customFontFamily": "JetBrains Mono",
-  "colorTx": "#00ff00",
-  "colorRx": "#dc143c",
+  "colorTx": "#ff0000",
+  "colorRx": "#00ff00",
   "colorSilent": "#1e222a",
   "colorText": "#8e959e"
 }

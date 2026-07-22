@@ -54,7 +54,7 @@
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
-        "marginHorizontal": 10,
+        "marginHorizontal": 5,
         "marginVertical": 4,
         "middleClickAction": "none",
         "middleClickCommand": "",
@@ -257,7 +257,7 @@
                 {
                     "clockColor": "none",
                     "customFont": "JetBrains Mono Medium",
-                    "formatHorizontal": "HH:mm\\ndd/MM/yyyy",
+                    "formatHorizontal": "HH:mm\\ndd MM yyyy",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
@@ -310,6 +310,9 @@
                         "useDistroLogo": false
                     },
                     "id": "plugin:arch-updater"
+                },
+                {
+                    "id": "plugin:update-count"
                 }
             ]
         }
@@ -751,9 +754,9 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "JetBrainsMono Nerd Font",
+        "fontDefault": "Adwaita Mono",
         "fontDefaultScale": 1,
-        "fontFixed": "JetBrainsMono Nerd Font",
+        "fontFixed": "Adwaita Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,

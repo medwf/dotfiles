@@ -29,24 +29,13 @@ lf() {
 
 
 # =========================================================
-# package manager `pacman`
+# package manager `dnf : fedora`
 # =========================================================
-alias pi='sudo pacman -S '
-alias pu='sudo pacman -Syu '
-alias ps='sudo pacman -Ss '
-alias pr='sudo pacman -R '
-alias pra='sudo pacman -Rns '
-alias pl='sudo pacman -Q '
-
-# =========================================================
-# package manager `paru`
-# =========================================================
-alias i='paru -S '
-alias u='paru -Syu '
-alias s='paru -Ss '
-alias r='paru -R '
-alias ra='paru -Rns '
-alias l='paru -Q '
+alias i='sudo dnf install '
+alias u='sudo dnf upgrade '
+alias s='sudo dnf search '
+alias r='sudo dnf remove '
+alias l='sudo dnf list '
 
 
 # =========================================================

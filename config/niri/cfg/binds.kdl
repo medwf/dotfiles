@@ -12,7 +12,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
     Mod+C hotkey-overlay-title="Open a editor: vs code" { spawn "code"; }
-    Mod+B hotkey-overlay-title="Open a Browser: brave" { spawn "brave"; }
+    Mod+B hotkey-overlay-title="Open a Browser: brave" { spawn "brave-browser"; } // in fedora use brave-browser, arch dist: brave
     Mod+T hotkey-overlay-title="Open a files manager: nautilus" { spawn "nautilus"; }
 
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }

@@ -36,6 +36,9 @@ export NVM_DIR="$HOME/.config/nvm"
 # mimocode
 export PATH=/home/medwf/.mimocode/bin:$PATH
 
+# opencode
+export PATH=/home/medwf/.opencode/bin:$PATH
+
 
 # ---------- powerlevel10k ----------
 # how ti install it

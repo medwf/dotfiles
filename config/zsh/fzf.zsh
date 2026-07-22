@@ -1,30 +1,21 @@
+
 # =========================================================
-# Fuzzy finder
+# Fuzzy finder (fzf)
 # =========================================================
 
-# macOS / Homebrew (Apple Silicon)
-if [[ -f /opt/homebrew/opt/fzf/shell/key-bindings.zsh ]]; then
-  source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
-  source /opt/homebrew/opt/fzf/shell/completion.zsh
-fi
+for dir in \
+    /opt/homebrew/opt/fzf \
+    /usr/local/opt/fzf \
+    /usr/share/fzf \
+    /usr/share/doc/fzf/examples
+do
+    [[ -f "$dir/shell/key-bindings.zsh" ]] && source "$dir/shell/key-bindings.zsh"
+    [[ -f "$dir/shell/completion.zsh" ]] && source "$dir/shell/completion.zsh"
 
-# macOS / Homebrew (Intel)
-if [[ -f /usr/local/opt/fzf/shell/key-bindings.zsh ]]; then
-  source /usr/local/opt/fzf/shell/key-bindings.zsh
-  source /usr/local/opt/fzf/shell/completion.zsh
-fi
+    [[ -f "$dir/key-bindings.zsh" ]] && source "$dir/key-bindings.zsh"
+    [[ -f "$dir/completion.zsh" ]] && source "$dir/completion.zsh"
+done
 
-# Arch
-if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
-  source /usr/share/fzf/key-bindings.zsh
-  source /usr/share/fzf/completion.zsh
-fi
-
-# Ubuntu
-if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-  source /usr/share/doc/fzf/examples/key-bindings.zsh
-  source /usr/share/doc/fzf/examples/completion.zsh
-fi
 
 # =========================================================
 # config
