@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "native",
+        "iconMode": "tabler",
         "ignoreMouseInput": true,
         "overviewLayer": true,
         "pinnedApps": [
@@ -46,7 +46,7 @@
         "barType": "floating",
         "capsuleColorKey": "none",
         "capsuleOpacity": 0,
-        "contentPadding": 8,
+        "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": false,
@@ -54,7 +54,7 @@
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
-        "marginHorizontal": 5,
+        "marginHorizontal": 4,
         "marginVertical": 4,
         "middleClickAction": "none",
         "middleClickCommand": "",
@@ -81,9 +81,9 @@
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
-                    "emptyColor": "tertiary",
+                    "emptyColor": "primary",
                     "enableScrollWheel": true,
-                    "focusedColor": "primary",
+                    "focusedColor": "tertiary",
                     "followFocusedScreen": true,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
@@ -92,7 +92,7 @@
                     "id": "Workspace",
                     "labelMode": "index",
                     "occupiedColor": "none",
-                    "pillSize": 0.9,
+                    "pillSize": 0.88,
                     "showApplications": false,
                     "showApplicationsHover": false,
                     "showBadge": true,
@@ -138,16 +138,6 @@
                     "id": "plugin:privacy-indicator"
                 },
                 {
-                    "defaultSettings": {
-                        "activeColor": "success",
-                        "iconColor": "none",
-                        "inactiveColor": "error",
-                        "refreshInterval": 5000,
-                        "statusState": "all"
-                    },
-                    "id": "plugin:mini-docker"
-                },
-                {
                     "compactMode": false,
                     "diskPath": "/",
                     "iconColor": "primary",
@@ -168,10 +158,6 @@
                     "textColor": "none",
                     "useMonospaceFont": true,
                     "usePadding": false
-                },
-                {
-                    "id": "Spacer",
-                    "width": 20
                 },
                 {
                     "defaultSettings": {
@@ -199,6 +185,10 @@
                         "widgetIcon": "building-mosque"
                     },
                     "id": "plugin:mawaqit"
+                },
+                {
+                    "id": "Spacer",
+                    "width": 20
                 }
             ],
             "right": [
@@ -219,49 +209,16 @@
                     "width": 10
                 },
                 {
-                    "displayMode": "onhover",
-                    "iconColor": "tertiary",
+                    "displayMode": "alwaysHide",
+                    "iconColor": "primary",
                     "id": "Bluetooth",
                     "textColor": "none"
                 },
                 {
-                    "displayMode": "alwaysHide",
-                    "iconColor": "tertiary",
+                    "displayMode": "alwaysShow",
+                    "iconColor": "primary",
                     "id": "Network",
                     "textColor": "none"
-                },
-                {
-                    "defaultSettings": {
-                        "byteThresholdActive": 5000,
-                        "columnSpacing": 0,
-                        "customFontBold": false,
-                        "customFontItalic": false,
-                        "fontSizeModifier": 0.75,
-                        "iconSizeModifier": 1,
-                        "iconType": "caret",
-                        "layout": "vertical",
-                        "paddingLeft": 5,
-                        "paddingRight": 0,
-                        "rowSpacing": -8,
-                        "slots": [
-                            "txSpeed",
-                            "txIcon",
-                            "rxSpeed",
-                            "rxIcon"
-                        ],
-                        "useCustomColors": false,
-                        "useCustomFont": false
-                    },
-                    "id": "plugin:network-indicator"
-                },
-                {
-                    "clockColor": "none",
-                    "customFont": "JetBrains Mono Medium",
-                    "formatHorizontal": "HH:mm\\ndd MM yyyy",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": true
                 },
                 {
                     "deviceNativePath": "__default__",
@@ -275,44 +232,28 @@
                 {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
-                    "iconColor": "tertiary",
+                    "iconColor": "none",
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "error"
                 },
                 {
                     "defaultSettings": {
-                        "aurCmd": "paru -Qua 2>/dev/null",
-                        "aurHomepageCmd": "LC_ALL=C paru -Si {id} 2>/dev/null | awk '/^URL/ {print $3}'",
-                        "boldText": true,
-                        "boldVer": true,
-                        "boldVerDesktop": true,
-                        "boldVerPanel": true,
-                        "closeButton": true,
-                        "closeOnSettings": false,
-                        "customIconPath": "",
-                        "desktopTip": true,
-                        "enableColorization": false,
-                        "flatpak": true,
-                        "hideOnEmpty": false,
-                        "hoverTip": true,
-                        "iconColor": "none",
-                        "iconName": "arrow-big-down-lines",
-                        "noctalia": true,
-                        "panelContext": true,
-                        "panelTooltip": true,
-                        "refreshInterval": 120,
-                        "refreshTimer": true,
-                        "systemCmd": "checkupdates 2>/dev/null",
-                        "toast": true,
-                        "tooltip": true,
-                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
-                        "useDistroLogo": false
+                        "currentIconName": "world-download",
+                        "hideOnZero": false,
+                        "updateIntervalMinutes": 30,
+                        "updateTerminalCommand": "foot -e"
                     },
-                    "id": "plugin:arch-updater"
+                    "id": "plugin:update-count"
                 },
                 {
-                    "id": "plugin:update-count"
+                    "clockColor": "none",
+                    "customFont": "JetBrains Mono ExtraBold",
+                    "formatHorizontal": "h:mm AP\\ndd MM yyyy",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "useCustomFont": true
                 }
             ]
         }
@@ -463,7 +404,7 @@
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
         "compactLockScreen": true,
-        "dimmerOpacity": 0.4,
+        "dimmerOpacity": 0.2,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": false,
         "enableLockScreenMediaControls": true,
@@ -502,12 +443,12 @@
         ],
         "lockScreenTint": 0.2,
         "passwordChars": false,
-        "radiusRatio": 0.3,
+        "radiusRatio": 0.5,
         "reverseScroll": false,
         "scaleRatio": 1,
-        "screenRadiusRatio": 0.62,
-        "shadowDirection": "bottom_right",
-        "shadowOffsetX": 2,
+        "screenRadiusRatio": 0.4,
+        "shadowDirection": "bottom",
+        "shadowOffsetX": 0,
         "shadowOffsetY": 3,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": true,
@@ -533,12 +474,12 @@
         "enabled": true,
         "fadeDuration": 5,
         "lockCommand": "",
-        "lockTimeout": 300,
+        "lockTimeout": 90,
         "resumeLockCommand": "",
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",
         "screenOffCommand": "",
-        "screenOffTimeout": 600,
+        "screenOffTimeout": 80,
         "suspendCommand": "",
         "suspendTimeout": 1800
     },
@@ -731,34 +672,18 @@
             },
             {
                 "enabled": true,
-                "id": "btop"
-            },
-            {
-                "enabled": true,
                 "id": "niri"
-            },
-            {
-                "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
-                "id": "telegram"
-            },
-            {
-                "enabled": true,
-                "id": "qt"
             }
         ],
         "enableUserTheming": false
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Adwaita Mono",
+        "fontDefault": "JetBrains Mono",
         "fontDefaultScale": 1,
-        "fontFixed": "Adwaita Mono",
+        "fontFixed": "JetBrains Mono",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 1,
+        "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
@@ -785,6 +710,20 @@
                 ],
                 "path": "/home/medwf/Pictures/Wallpapers/mountain.jpg",
                 "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu Blue",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#cbcc58",
+                    "#cac8a5",
+                    "#a4d0bd",
+                    "#ffb4ab"
+                ],
+                "path": "/home/medwf/Pictures/Wallpapers/left-right.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",

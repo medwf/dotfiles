@@ -2,7 +2,7 @@
   "updateIntervalMinutes": 5,
   "updateTerminalCommand": "kitty -e",
   "currentIconName": "arrow-big-down-filled",
-  "hideOnZero": false,
+  "hideOnZero": true,
   "customCmdGetNumUpdates": "",
   "customCmdDoSystemUpdate": ""
 }

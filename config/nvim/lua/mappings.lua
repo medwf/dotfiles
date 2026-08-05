@@ -1,0 +1,78 @@
+require "nvchad.mappings"
+
+local map = vim.keymap.set
+
+map("n", ";", ":", { desc = "CMD enter command mode" })
+map("i", "jk", "<ESC>")
+
+-- disable NvChad terminal keymaps
+vim.keymap.del("n", "<leader>h")
+vim.keymap.del("n", "<leader>v")
+map({ "n", "t" }, "<A-v>", "<nop>", { desc = "disabled" })
+map({ "n", "t" }, "<A-h>", "<nop>", { desc = "disabled" })
+
+-- Save file with Ctrl + S in normal, insert, and visual modes
+map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>", { desc = "Save file" })
+
+-- Move cursor in insert mode with Alt + h/j/k/l
+map("i", "<A-h>", "<Left>", { desc = "Move left in insert mode" })
+map("i", "<A-j>", "<Down>", { desc = "Move down in insert mode" })
+map("i", "<A-k>", "<Up>", { desc = "Move up in insert mode" })
+map("i", "<A-l>", "<Right>", { desc = "Move right in insert mode" })
+
+-- Select all with Ctrl + A
+map("n", "<C-a>", "ggVG", { desc = "Select all" })
+map("i", "<C-a>", "<ESC>ggVG", { desc = "Select all in insert mode" })
+map("v", "<C-a>", "<ESC>ggVG", { desc = "Select all in visual mode" })
+
+-- LazyGit integration
+map("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "Open LazyGit" })
+
+-- Move between buffers with g + number keys (normal mode only)
+for i = 1, 9 do
+  vim.keymap.set("n", "g" .. i, function()
+    local bufs = vim.fn.getbufinfo { buflisted = 1 }
+    if bufs[i] then
+      vim.api.nvim_set_current_buf(bufs[i].bufnr)
+    end
+  end, { desc = "Switch to listed buffer " .. i })
+end
+
+-- g0 switches to the last listed buffer
+vim.keymap.set("n", "g0", function()
+  local bufs = vim.fn.getbufinfo { buflisted = 1 }
+  if bufs[#bufs] then
+    vim.api.nvim_set_current_buf(bufs[#bufs].bufnr)
+  end
+end, { desc = "Switch to last listed buffer" })
+
+-- Toggle terminal with Alt + i in normal and terminal modes with custom floating window options
+map({ "n", "t" }, "<A-i>", function()
+  require("nvchad.term").toggle {
+    pos = "float",
+    id = "floatTerm",
+    float_opts = {
+      row = 0.1,
+      col = 0.08,
+      width = 0.8,
+      height = 0.7,
+      border = "rounded",
+    },
+  }
+end, { desc = "Toggle floating terminal" })
+
+-- Kulala HTTP client (works in .http / .rest files)
+map("n", "<leader>Rs", function() require("kulala").run() end,              { desc = "Kulala: Send request" })
+map("n", "<leader>Ra", function() require("kulala").run_all() end,          { desc = "Kulala: Send all requests" })
+map("n", "<leader>Rn", function() require("kulala").jump_next() end,        { desc = "Kulala: Next request" })
+map("n", "<leader>Rp", function() require("kulala").jump_prev() end,        { desc = "Kulala: Prev request" })
+map("n", "<leader>Re", function() require("kulala").set_selected_env() end, { desc = "Kulala: Select environment" })
+map("n", "<leader>Rc", function() require("kulala").copy() end,             { desc = "Kulala: Copy as curl" })
+map("n", "<leader>Rq", function() require("kulala").close() end,            { desc = "Kulala: Close response" })
+
+-- Tmux Neovim Navigator
+map("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Navigate left (tmux)" })
+map("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "Navigate down (tmux)" })
+map("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", { desc = "Navigate up (tmux)" })
+map("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Navigate right (tmux)" })
+map("n", "<C-\\>", "<cmd>TmuxNavigatePrevious<CR>", { desc = "Navigate previous (tmux)" })
