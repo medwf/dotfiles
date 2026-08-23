@@ -42,5 +42,7 @@ include "cfg/binds.kdl"
 include "cfg/system.kdl"
 
 // theme noctalia shell
-include "noctalia.kdl"
+
+
+include "./noctalia.kdl"
 

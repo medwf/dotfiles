@@ -25,7 +25,7 @@
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "mprisBlacklist": [
@@ -54,7 +54,7 @@
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
-        "marginHorizontal": 4,
+        "marginHorizontal": 200,
         "marginVertical": 4,
         "middleClickAction": "none",
         "middleClickCommand": "",
@@ -64,7 +64,7 @@
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
         "outerCorners": true,
-        "position": "top",
+        "position": "bottom",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -189,6 +189,16 @@
                 {
                     "id": "Spacer",
                     "width": 20
+                },
+                {
+                    "defaultSettings": {
+                        "activeColor": "success",
+                        "iconColor": "none",
+                        "inactiveColor": "error",
+                        "refreshInterval": 5000,
+                        "statusState": "all"
+                    },
+                    "id": "plugin:mini-docker"
                 }
             ],
             "right": [
@@ -320,7 +330,7 @@
             }
         ],
         "diskPath": "/",
-        "position": "top_center",
+        "position": "center",
         "shortcuts": {
             "left": [
                 {
@@ -673,6 +683,18 @@
             {
                 "enabled": true,
                 "id": "niri"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "qt"
+            },
+            {
+                "enabled": true,
+                "id": "code"
             }
         ],
         "enableUserTheming": false
